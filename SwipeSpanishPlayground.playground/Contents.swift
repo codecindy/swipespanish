@@ -137,15 +137,11 @@ let wordsArray = [
 
 
 //this function needs to call a random array from the second value which is English, then also display the first value of the array, which is Spanish
-
-
     let arrayCount = Int(wordsArray.count)
 
 
     
-    //        let randomNumber = Int(arc4random_uniform(arrayCount))
-    
-//    
+//    let randomNumber = Int(arc4random_uniform(arrayCount))
 //    let randomPair = wordsArray[0]
 //    print(randomPair)
 //    return randomPair

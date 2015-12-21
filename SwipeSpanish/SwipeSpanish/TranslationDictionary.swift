@@ -8,6 +8,8 @@
 
 import Foundation
 
+//Struct where our Words array lives
+
 struct Words {
     
 let wordsArray = [
@@ -143,34 +145,29 @@ let wordsArray = [
     ["el zorro","fox"  ],
 ]
 
-    //this function needs to call a random array from the second value which is English, then also display the first value of the array, which is Spanish
+//randomArray function counts the number of arrays within wordsArray, then chooses a random number from that count, then assigns randomPair with the chosen random array, to be passed to first view controller
 
     func randomArray() -> [String]{
         
-        
         let arrayCount = UInt32(wordsArray.count)
         let randomNumber = Int(arc4random_uniform(arrayCount))
-        
-        
-
         let randomPair = self.wordsArray[randomNumber]
+        
 //        print(randomPair)
         
         return randomPair
         
+
+/* FAILED ATTEMPTS AT PASSING SPANISH AND ENGLISH IN THIS STRUCT TO VIEW CONTROLLER*/
         
 //        let spanish = randomPair.0
 //        print(spanish)
 //        let english = randomArray().1
-////        print(english)
+//        print(english)
 //        return (spanish,english)
         
     }
-   
 
-    
-
-    
 //    func showEnglish() -> String{
 //        var monkey =
 //        
@@ -187,16 +184,6 @@ let wordsArray = [
 //        
 //        return spanishWord
 //    }
-    
-    
-
-    
-    
-    
-
-    
-
-    
     
 }
 

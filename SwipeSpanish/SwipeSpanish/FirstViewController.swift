@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 let BASE_URL = "https://api.flickr.com/services/rest/"
 let METHOD_NAME:String! = "flickr.photos.search"
 let API_KEY:String! = "0693969f57676ff5e48db06d2ba62027"
@@ -20,9 +18,9 @@ let SAFE_SEARCH:String!="1"
 let NO_JSON_CALLBACK:String! = "1"
 let SORT = "relevance"
 
-
-
 class FirstViewController: UIViewController {
+    
+//Reference our Struct here
     let wordStruct = Words()
     
     var photoArray2: AnyObject! = [String: AnyObject]()
@@ -37,20 +35,23 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var spanishWordLabel: UILabel!
     
-    @IBOutlet weak var searchText: UITextField!
+    
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//Run our randomArray function from Struct here to populate first image and Spanish word
         let randomArray = self.wordStruct.randomArray()
         
+//Assign what word is being searched for on Flickr, English word is index 1 in array
         let word:String = randomArray[1]
         
-        
-        
         //        print(word)
-        
+
+//Assign what word is being shown to user on app, Spanish word is index 0 in array
         self.spanishWordLabel.text = randomArray[0]
         
         var methodArguments = [
@@ -204,25 +205,25 @@ class FirstViewController: UIViewController {
             print("Image does not exist at \(iImageUrl[0])")
         }
     } // end of func nextPerson()
-            
-
 
     
-    @IBAction func nextImageButton(sender: AnyObject) {
-
-    }
     
-   //replace searchText with random in dictionary
-   
+    
+    
+    
+    
+    
+//Button for user to click for next random word
     @IBAction func searchButton(sender: AnyObject) {
+        
         let randomArray = self.wordStruct.randomArray()
         
+//Assign what word is being searched for on Flickr, English word is index 1 in array
         let word:String = randomArray[1]
-        
-        
-        
+
 //        print(word)
         
+//Assign what word is being shown to user on app, Spanish word is index 0 in array
         self.spanishWordLabel.text = randomArray[0]
         
         var methodArguments = [
@@ -235,13 +236,13 @@ class FirstViewController: UIViewController {
             "nojsoncallback": NO_JSON_CALLBACK,
             "sort": SORT
         ]
+        
         if methodArguments.isEmpty {
             
         }else {
             self.getImageFromFlickrSearch(methodArguments)
         }
-    } //close IBAction searchButton
-    
+    }
 
 }
 

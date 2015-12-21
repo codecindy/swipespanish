@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -27,37 +27,6 @@
                                     <rect key="frame" x="107" y="423" width="186" height="24"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pW-og-kdO">
-                                <rect key="frame" x="180" y="278" width="238" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="Next Image">
-                                    <color key="titleColor" red="0.9832973653" green="0.98572032330000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextImageButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="rcB-eM-hN9"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sb-ST-dQl">
-                                <rect key="frame" x="143" y="444" width="313" height="30"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="44" y="553" width="313" height="30"/>
-                                </variation>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P5C-yQ-aJ3">
-                                <rect key="frame" x="143" y="444" width="313" height="30"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="313" id="3an-f5-CIh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="44" y="553" width="313" height="30"/>
-                                </variation>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XBS-fb-sjV">
                                 <rect key="frame" x="7" y="5" width="225" height="225"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,11 +43,11 @@
                                     <constraint firstAttribute="width" constant="144" id="IPL-qa-ht6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="Search">
+                                <state key="normal" title="Next Animal">
                                     <color key="titleColor" red="0.96640230429999996" green="0.96640230429999996" blue="0.96640230429999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="128" y="347" width="144" height="30"/>
+                                    <rect key="frame" x="128" y="344" width="144" height="36"/>
                                 </variation>
                                 <connections>
                                     <action selector="searchButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="SNa-Jb-CDH"/>
@@ -89,12 +58,8 @@
                         <constraints>
                             <constraint firstItem="XBS-fb-sjV" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="30" id="4zq-Kv-Xcb"/>
                             <constraint firstItem="su5-cC-oY8" firstAttribute="top" secondItem="XBS-fb-sjV" secondAttribute="bottom" constant="20" id="7Px-9N-SyK"/>
-                            <constraint firstItem="5sb-ST-dQl" firstAttribute="centerX" secondItem="XBS-fb-sjV" secondAttribute="centerX" id="JyG-Hh-7zt"/>
-                            <constraint firstItem="5pW-og-kdO" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="OPd-YY-Y1W"/>
                             <constraint firstItem="XBS-fb-sjV" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="0.4" id="W9V-Yl-t7e"/>
-                            <constraint firstItem="5pW-og-kdO" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="26" id="a29-DE-5u0"/>
                             <constraint firstItem="xRh-fo-SWl" firstAttribute="top" secondItem="XBS-fb-sjV" secondAttribute="bottom" constant="17" id="ayi-b6-og9"/>
-                            <constraint firstItem="5pW-og-kdO" firstAttribute="centerX" secondItem="XBS-fb-sjV" secondAttribute="centerX" id="flI-Zy-j01"/>
                             <constraint firstItem="XBS-fb-sjV" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="qlt-n5-bj9"/>
                             <constraint firstItem="XBS-fb-sjV" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="rd6-Kf-AcX"/>
                             <constraint firstItem="su5-cC-oY8" firstAttribute="centerX" secondItem="XBS-fb-sjV" secondAttribute="centerX" id="uYy-O4-911"/>
@@ -116,7 +81,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="imageDisplayOutlet" destination="XBS-fb-sjV" id="V1N-SR-f8e"/>
-                        <outlet property="searchText" destination="5sb-ST-dQl" id="3jI-VJ-9aJ"/>
                         <outlet property="spanishWordLabel" destination="su5-cC-oY8" id="Hs8-AK-gbY"/>
                     </connections>
                 </viewController>
